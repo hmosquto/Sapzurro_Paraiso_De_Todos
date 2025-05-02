@@ -1,117 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Descubre Sapzurro, Chocó</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sapzurro, Paraíso de Todos</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Montserrat', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #f4f4f4;
+      font-family: 'Montserrat', sans-serif;
+      background-color: #f5f5f5;
       color: #333;
     }
     header {
-      background-image: url('https://www.siturchoco.com/wp-content/uploads/2020/10/sapzurro_01.jpg');
-      background-size: cover;
-      background-position: center;
-      height: 90vh;
+      background: url('https://scontent.fbog16-1.fna.fbcdn.net/v/t39.30808-6/318959990_1379049495614410_6046220069044702969_n.jpg?stp=dst-jpg&_nc_cat=109&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeE9L4mGz5S9TyBoZ5k93qvInBGW-ldIZ6d0AKCCV0UJ4NaZyQk0bmcTQtYgt2Wh79Y&_nc_ohc=Rm1pAKZ9KQoAX8CE5Zu&_nc_ht=scontent.fbog16-1.fna&oh=00_AfANIm_mx-zyzFJd2M0t4dLoM95Yx-5S6CCh6Mi5OAEgVg&oe=645A2D99') no-repeat center center/cover;
+      padding: 100px 20px;
+      text-align: center;
       color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-shadow: 2px 2px 4px #000;
     }
     header h1 {
       font-size: 3em;
-      text-align: center;
+      margin: 0;
     }
-    section {
-      padding: 60px 20px;
+    header p {
+      font-size: 1.2em;
+    }
+    .section {
+      padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
-    h2 {
+    .section h2 {
       text-align: center;
-      color: #007b5f;
-      margin-bottom: 20px;
+      color: #00695c;
+      margin-bottom: 30px;
     }
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 15px;
+      gap: 20px;
     }
     .gallery img {
       width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 10px;
-    }
-    .info-box {
-      background: white;
-      padding: 20px;
-      margin-top: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    iframe {
-      width: 100%;
-      height: 400px;
-      border: none;
       border-radius: 10px;
     }
     footer {
+      background-color: #00695c;
+      color: white;
       text-align: center;
       padding: 20px;
-      background: #007b5f;
+    }
+    a.button {
+      display: inline-block;
+      background: #009688;
       color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Sapzurro, Paraíso de Todos</h1>
+    <p>Un rincón paradisíaco en el Caribe colombiano donde la selva abraza al mar</p>
+  </header>
 
-<header>
-  <h1>Descubre Sapzurro, Chocó</h1>
-</header>
+  <section class="section">
+    <h2>Sobre Sapzurro</h2>
+    <p>Sapzurro es una joya escondida en el extremo norte del Chocó, Colombia, donde el mar Caribe se encuentra con la selva tropical. Disfruta de playas de aguas cristalinas, caminatas ecológicas, cultura caribeña auténtica y la oportunidad de cruzar a pie hacia Panamá (La Miel).</p>
+  </section>
 
-<section>
-  <h2>¿Por qué visitar Sapzurro?</h2>
-  <div class="info-box">
-    <p>Sapzurro es una joya escondida en el extremo norte del Chocó, Colombia, donde el mar Caribe se encuentra con la selva tropical. Disfruta de playas de aguas cristalinas, caminatas ecológicas, y una cultura caribeña auténtica. Además, puedes cruzar caminando a Capurganá o incluso a Panamá (La Miel).</p>
-  </div>
-</section>
+  <section class="section">
+    <h2>Galería de Imágenes</h2>
+    <div class="gallery">
+      <img src="https://m.facebook.com/Sapzurro1/photos/a.833498036836228/833497750169590/" alt="Muelle de Sapzurro" />
+      <img src="https://m.facebook.com/Sapzurro1/photos/a.898388957013802/1379062408946452/" alt="Bahía de Sapzurro" />
+      <img src="https://m.facebook.com/Sapzurro1/photos/a.898388957013802/1379062402279786/" alt="Playa y naturaleza" />
+    </div>
+  </section>
 
-<section>
-  <h2>Galería de Imágenes</h2>
-  <div class="gallery">
-    <img src="https://www.siturchoco.com/wp-content/uploads/2020/10/sapzurro_02.jpg" alt="Playa Sapzurro">
-    <img src="https://i.ytimg.com/vi/hX4uU9EUYRo/maxresdefault.jpg" alt="Senderos ecológicos">
-    <img src="https://viajesnatitur.com/wp-content/uploads/2021/01/Sapzurro-1.jpg" alt="Naturaleza">
-    <img src="https://live.staticflickr.com/65535/47966182887_90f3ee88c0_b.jpg" alt="Vista aérea">
-  </div>
-</section>
-
-<section>
-  <h2>Información útil</h2>
-  <div class="info-box">
+  <section class="section">
+    <h2>Actividades</h2>
     <ul>
-      <li><strong>Cómo llegar:</strong> En lancha desde Turbo o en avioneta a Acandí y luego lancha.</li>
-      <li><strong>Clima:</strong> Tropical húmedo (28°C promedio).</li>
-      <li><strong>Actividades:</strong> Snorkel, senderismo, visitas a La Miel (Panamá), playa, gastronomía.</li>
+      <li>Senderismo ecológico hacia La Miel (Panamá)</li>
+      <li>Snorkel y buceo en arrecifes</li>
+      <li>Gastronomía y cultura afrocaribeña</li>
     </ul>
-  </div>
-</section>
+  </section>
 
-<section>
-  <h2>Ubicación en el Mapa</h2>
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.5057327615953!2d-77.35845628573928!3d8.66720659891367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e9fbaa3f0b0a62b%3A0x26a942dc5418e7a3!2sSapzurro%2C%20Acand%C3%AD%2C%20Choc%C3%B3!5e0!3m2!1ses!2sco!4v1601474888255!5m2!1ses!2sco" allowfullscreen></iframe>
-</section>
+  <section class="section" style="text-align: center;">
+    <h2>Contacto</h2>
+    <p>Visita nuestra página en Facebook para más información y reservas:</p>
+    <a class="button" href="https://www.facebook.com/Sapzurro1" target="_blank">Sapzurro Paraíso de Todos</a>
+  </section>
 
-<footer>
-  © 2025 Descubre Sapzurro. Todos los derechos reservados.
-</footer>
-
+  <footer>
+    &copy; 2025 Sapzurro Paraíso de Todos. Todos los derechos reservados.
+  </footer>
 </body>
 </html>
