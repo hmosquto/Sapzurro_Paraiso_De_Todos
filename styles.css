@@ -674,16 +674,6 @@ main {
   }
 }
 
-@media (max-width: 600px) {
-  .hero h1 { font-size: 1.3rem; }
-  .hero-content { padding-top: 3vh; padding-bottom: 2vh; }
-  main { padding: 0.5rem; }
-  section {
-    padding: 1rem 0.2rem;
-    margin-bottom: 1.2rem;
-  }
-}
-
 /* Hero responsive */
 .hero {
   min-height: 60vh;
