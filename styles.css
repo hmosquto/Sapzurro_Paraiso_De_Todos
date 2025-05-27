@@ -103,6 +103,9 @@ header.hero {
   .hero-bg {
     height: 120px;
   }
+  .hero::before {
+    background: transparent !important;
+  }
 }
 
 /* --- MENÚ MODERNO CENTRADO Y RESPONSIVE --- */
@@ -671,13 +674,6 @@ main {
     padding: 1rem 0.2rem;
     margin-bottom: 1.2rem;
   }
-}
-
-@media (max-width: 700px) {
-  .slider-section, .videos-section { max-width: 98vw; }
-  .slide img { max-height: 200px; }
-  .videos-grid { flex-direction: column; gap: 1.2rem; }
-  .video-item { max-width: 100%; }
 }
 
 /* Hero responsive */
