@@ -107,7 +107,7 @@ header.hero {
     left: 0;
   }
   .hero-content {
-    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    padding: 0.5rem;
     z-index: 2;
     position: relative;
   }
@@ -673,17 +673,6 @@ main {
     grid-template-columns: 1fr;
   }
 }
-
-/* Hero responsive */
-.hero {
-  min-height: 60vh;
-  padding-top: 4rem;
-  padding-bottom: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 
 /* Menú responsive */
 @media (max-width: 900px) {
