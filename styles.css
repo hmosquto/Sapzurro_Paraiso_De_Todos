@@ -628,6 +628,13 @@ img, video, iframe {
   .hero-content h1 {
     font-size: 1.2rem;
   }
+  .bienvenida-texto h2,
+  .galeria-preview h2,
+  .destacados h2,
+  .slider-section h2,
+  .videos-section h2 {
+    font-size: 1.3rem;
+  }
   .galeria-grid {
     flex-direction: column;
     align-items: center;
