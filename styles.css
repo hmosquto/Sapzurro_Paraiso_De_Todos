@@ -215,29 +215,26 @@ main {
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .galeria-grid figure {
   background: #fff;
-  /* border: 2px solid var(--azul-claro); */ /* Elimina o comenta esta línea */
   border-radius: 1.2rem;
   box-shadow: 0 2px 16px #0001;
   overflow: hidden;
   margin: 0;
   transition: transform 0.2s, box-shadow 0.2s;
+  width: 220px;
 }
-
 .galeria-grid figure:hover {
   transform: scale(1.04);
   box-shadow: 0 8px 32px #2ecc4066;
 }
-
 .galeria-grid img {
-  width: 220px;
+  width: 100%;
   height: 150px;
   object-fit: cover;
   display: block;
+  border-radius: 1.2rem 1.2rem 0 0;
 }
-
 .galeria-grid figcaption {
   padding: 0.7rem 1rem;
   background: #e3f0ff;
@@ -246,46 +243,18 @@ main {
   text-align: center;
 }
 
-.mini-galeria {
-  display: flex;
-  gap: 0.7rem;
-  margin-top: 1rem;
-}
-
-.mini-galeria img {
-  width: 70px;
-  height: 50px;
-  object-fit: cover;
-  border-radius: 0.7rem;
-  box-shadow: 0 1px 6px #0001;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.mini-galeria img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 2px 12px #2ecc40;
-}
-
-/* DESTACADOS */
-.destacados {
-  margin: 2.5rem auto 2rem auto;
-  max-width: 1100px;
-  text-align: center;
-}
-
+/* --- DESTACADOS --- */
 .destacados-grid {
   display: flex;
   gap: 2rem;
   justify-content: center;
   flex-wrap: wrap;
 }
-
 .destacado {
-  background: var(--blanco);
-  /* border: 2px solid var(--azul-claro); */ /* Elimina o comenta esta línea */
+  background: #fff;
   box-shadow: 0 4px 24px #0001;
   padding: 2rem 1.2rem 1.5rem 1.2rem;
+  border-radius: 1.2rem;
   max-width: 320px;
   min-width: 220px;
   flex: 1 1 260px;
@@ -294,22 +263,10 @@ main {
   align-items: center;
   transition: transform 0.2s, box-shadow 0.2s;
 }
-
 .destacado:hover {
   transform: translateY(-8px) scale(1.03);
-  box-shadow: 0 8px 32px var(--verde-naturaleza);
-  border-color: var(--verde-naturaleza);
+  box-shadow: 0 8px 32px #2ecc40;
 }
-
-.destacado-img {
-  width: 100%;
-  max-width: 180px;
-  margin-bottom: 1rem;
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 0 2px 12px #0001;
-}
-
 .destacado-img img {
   width: 100%;
   height: 120px;
@@ -317,14 +274,12 @@ main {
   border-radius: 1rem;
   display: block;
 }
-
 .destacado h3 {
   margin: 0.7rem 0 0.5rem 0;
-  color: var(--verde-naturaleza);
+  color: #2ecc40;
   font-size: 1.25rem;
   font-weight: 600;
 }
-
 .destacado p {
   color: #333;
   font-size: 1rem;
@@ -963,8 +918,15 @@ section {
     max-width: 98vw;
     border-radius: 1rem;
   }
+  .destacados-grid {
+    gap: 1rem;
+  }
+  .destacado {
+    padding: 1.2rem 0.7rem;
+  }
 }
 
+/* --- RESET DE IMÁGENES Y VIDEOS --- */
 img, video, iframe {
   max-width: 100%;
   height: auto;
