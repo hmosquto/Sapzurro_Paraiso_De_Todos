@@ -947,6 +947,24 @@ section {
   }
 }
 
+@media (max-width: 600px) {
+  .galeria-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .galeria-grid figure {
+    width: 100%;
+    max-width: 98vw;
+  }
+  .galeria-grid img {
+    width: 100%;
+    height: auto;
+    max-width: 98vw;
+    border-radius: 1rem;
+  }
+}
+
 img, video, iframe {
   max-width: 100%;
   height: auto;
