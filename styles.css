@@ -79,7 +79,9 @@ header.hero {
     padding-top: 2rem;
   }
   .hero-bg {
-    height: 200px;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
   }
   .hero-content h1 {
     font-size: 2rem;
@@ -93,7 +95,9 @@ header.hero {
     font-size: 1.2rem;
   }
   .hero-bg {
-    height: 120px;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
   }
   .hero::before {
     background: transparent !important;
