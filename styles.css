@@ -16,6 +16,10 @@ body {
   margin: 0;
   padding: 0;
 }
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 
 /* HEADER */
 header.hero {
@@ -648,5 +652,14 @@ img, video, iframe {
   .footer-links {
     flex-direction: column;
     gap: 0.5rem;
+  }
+  main {
+    padding: 0.5rem;
+  }
+  section,
+  .bienvenida, .galeria-preview, .destacados, .slider-section, .videos-section, .testimonios {
+    padding: 0.7rem 0.2rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
   }
 }
