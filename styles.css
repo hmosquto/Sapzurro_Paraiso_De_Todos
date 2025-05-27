@@ -89,24 +89,30 @@ header.hero {
 }
 @media (max-width: 600px) {
   header.hero {
-    min-height: 140px !important;
-    height: 140px !important;
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
+    min-height: 140px;
+    height: 140px;
+    max-height: 140px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .hero-bg {
-    height: 140px !important;
-    min-height: 140px !important;
-    max-height: 140px !important;
+    height: 140px;
+    min-height: 140px;
+    max-height: 140px;
+    width: 100vw;
+    object-fit: cover;
+    top: 0;
+    left: 0;
   }
   .hero-content {
-    padding: 1.5rem 0.5rem 1rem 0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+    z-index: 2;
+    position: relative;
   }
   .hero-content h1 {
     font-size: 1.2rem;
-  }
-  .hero::before {
-    background: transparent !important;
   }
 }
 
