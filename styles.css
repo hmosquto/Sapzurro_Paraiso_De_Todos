@@ -70,15 +70,7 @@ header.hero {
   animation: esloganMover 12s linear infinite;
 }
 
-/* Overlay oscuro para mejorar legibilidad */
-.hero::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100vw; height: 100vh;
-  background: rgba(0,0,0,0.45);
-  z-index: 1;
-}
+
 
 /* RESPONSIVE HERO */
 @media (max-width: 900px) {
