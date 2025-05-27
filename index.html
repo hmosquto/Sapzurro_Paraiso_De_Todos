@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sapzurro Paraíso de Todos</title>
+  <meta name="description" content="Descubre Sapzurro, un paraíso natural en el Chocó, Colombia. Información, fotos, videos, cultura, gastronomía y aventuras.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Quicksand:400,700&display=swap" rel="stylesheet">
+  <link rel="icon" href="img/favicon.ico">
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+</head>
+<body>
+  <nav class="menu" aria-label="Menú principal" role="navigation">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="como-llegar.html">Cómo Llegar</a></li>
+      <li><a href="hospedaje.html">Hospedaje</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+  <header class="hero">
+    <img src="img/Imgane1.jpg" alt="Vista panorámica de Sapzurro" class="hero-bg" loading="lazy">
+    <div class="hero-content">
+      <h1>Sapzurro Paraíso de Todos</h1>
+      <p class="eslogan">Descubre el paraíso escondido en el Chocó</p>
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+    </div>
+  </header>
+
+<main>
+  <!-- SECCIÓN BIENVENIDA -->
+  <section class="bienvenida" aria-labelledby="bienvenida-titulo">
+    <div class="bienvenida-contenido">
+      <div class="bienvenida-texto">
+        <h2 id="bienvenida-titulo">Bienvenidos a Sapzurro</h2>
+        <p>
+          Ubicado en el extremo norte del departamento del Chocó, en el municipio de Acandí, Sapzurro es un corregimiento que se distingue por su belleza natural, su rica herencia cultural y la calidez de su gente.<br><br>
+        </p>
+        <a href="galeria.html" class="boton">Ver Galería</a>
+      </div>
+      <div class="bienvenida-imagen">
+        <img src="img/Imgane2.jpg" alt="Vista de Sapzurro" class="imagen-principal" id="imagenPrincipal" loading="lazy">
+        <div class="mini-galeria">
+          <img src="img/Imgane3.jpg" alt="Sapzurro 2" loading="lazy">
+          <img src="img/Imgane4.jpg" alt="Sapzurro 3" loading="lazy">
+          <img src="img/Imgane5.jpg" alt="Sapzurro 4" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN GALERÍA PREVIEW -->
+  <section class="galeria-preview" aria-labelledby="galeria-titulo">
+    <h2 id="galeria-titulo">Explora Sapzurro en Imágenes</h2>
+    <div class="galeria-filtros">
+      <button data-filtro="todas" class="filtro-activo">Todas</button>
+      <button data-filtro="playas">Playas</button>
+      <button data-filtro="alojamiento">Alojamiento</button>
+      <button data-filtro="naturaleza">Naturaleza</button>
+      <button data-filtro="comunidad">Comunidad</button>
+    </div>
+    <div class="galeria-grid">
+      <figure data-categoria="playas">
+        <img src="img/Imgane2.jpg" alt="Playa de Sapzurro" loading="lazy">
+        <figcaption>Playa de Sapzurro</figcaption>
+      </figure>
+      <figure data-categoria="naturaleza">
+        <img src="img/Imgane3.jpg" alt="Senderos naturales" loading="lazy">
+        <figcaption>Senderos naturales</figcaption>
+      </figure>
+      <figure data-categoria="comunidad">
+        <img src="img/Imgane4.jpg" alt="Atardecer en la bahía" loading="lazy">
+        <figcaption>Atardecer en la bahía</figcaption>
+      </figure>
+      <figure data-categoria="alojamiento">
+        <img src="img/Imgane5.jpg" alt="Cultura local" loading="lazy">
+        <figcaption>Cultura local</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Lightbox para galería -->
+  <div id="lightbox" class="lightbox" style="display:none;">
+    <span class="lightbox-close" id="lightboxClose">&times;</span>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </div>
+
+  <!-- SECCIÓN DESTACADOS -->
+  <section class="destacados" aria-labelledby="destacados-titulo">
+    <h2 id="destacados-titulo">¿Por qué visitar Sapzurro?</h2>
+    <div class="destacados-grid">
+      <div class="destacado">
+        <div class="destacado-img">
+          <img src="img/Imgane2.jpg" alt="Playas cristalinas" loading="lazy">
+        </div>
+        <h3>Playas cristalinas</h3>
+        <p>Disfruta de aguas turquesas y arenas blancas en un entorno natural único.</p>
+      </div>
+      <div class="destacado">
+        <div class="destacado-img">
+          <img src="img/Imgane3.jpg" alt="Naturaleza exuberante" loading="lazy">
+        </div>
+        <h3>Naturaleza exuberante</h3>
+        <p>Explora selvas, senderos y una biodiversidad sorprendente.</p>
+      </div>
+      <div class="destacado">
+        <div class="destacado-img">
+          <img src="img/Imgane4.jpg" alt="Cultura local" loading="lazy">
+        </div>
+        <h3>Cultura local</h3>
+        <p>Vive la hospitalidad y tradiciones de una comunidad auténtica.</p>
+      </div>
+      <div class="destacado">
+        <div class="destacado-img">
+          <img src="img/gastronomia.jpg" alt="Gastronomía local" loading="lazy">
+        </div>
+        <h3>Gastronomía local</h3>
+        <p>Saborea platos típicos del Caribe y del Pacífico, frescos y deliciosos.</p>
+      </div>
+      <div class="destacado">
+        <div class="destacado-img">
+          <img src="img/aventura.jpg" alt="Aventuras acuáticas" loading="lazy">
+        </div>
+        <h3>Aventuras acuáticas</h3>
+        <p>Practica snorkel, buceo o paseos en lancha en aguas cristalinas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDER DE IMÁGENES -->
+  <section class="slider-section" aria-labelledby="slider-titulo">
+    <h2 id="slider-titulo">Descubre Sapzurro en Imágenes</h2>
+    <div class="slider" id="slider">
+      <div class="slide active">
+        <img src="img/Imgane2.jpg" alt="Playa principal de Sapzurro" loading="lazy">
+        <div class="slide-caption">Playa principal de Sapzurro</div>
+      </div>
+      <div class="slide">
+        <img src="img/Imgane3.jpg" alt="Senderos naturales" loading="lazy">
+        <div class="slide-caption">Senderos naturales</div>
+      </div>
+      <div class="slide">
+        <img src="img/Imgane4.jpg" alt="Atardecer en la bahía" loading="lazy">
+        <div class="slide-caption">Atardecer en la bahía</div>
+      </div>
+      <div class="slide">
+        <img src="img/Imgane5.jpg" alt="Cultura local" loading="lazy">
+        <div class="slide-caption">Cultura local</div>
+      </div>
+      <button class="slider-btn prev" aria-label="Anterior">&#10094;</button>
+      <button class="slider-btn next" aria-label="Siguiente">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- VIDEOS -->
+  <section class="videos-section" aria-labelledby="videos-titulo">
+    <h2 id="videos-titulo">Videos de Sapzurro</h2>
+    <div class="videos-grid">
+      <div class="video-item">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/NHhrDjrmLp4" title="Explora Sapzurro desde el aire" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-caption">Explora Sapzurro desde el aire</div>
+      </div>
+      <div class="video-item">
+        <div class="video-frame">
+          <iframe src="https://www.youtube.com/embed/dD11c7Go7yQ" title="Cultura y tradiciones" frameborder="0" allowfullscreen loading="lazy"></iframe>
+        </div>
+        <div class="video-caption">Cultura y tradiciones</div>
+      </div>
+      <!-- Agrega más videos aquí si lo deseas -->
+    </div>
+  </section>
+
+  <!-- SECCIÓN TESTIMONIOS -->
+  <section class="testimonios" aria-labelledby="testimonios-titulo">
+    <h2 id="testimonios-titulo">Testimonios de visitantes</h2>
+    <div class="testimonios-grid">
+      <div class="testimonio">
+        <img src="img/testimonio1.jpg" alt="Foto de Ana">
+        <blockquote>“Sapzurro superó mis expectativas, la naturaleza es increíble y la gente muy amable.”</blockquote>
+        <div class="estrellas">★★★★★</div>
+        <cite>- Ana G.</cite>
+      </div>
+      <div class="testimonio">
+        <img src="img/testimonio2.jpg" alt="Foto de Luis">
+        <blockquote>“Las playas son espectaculares y la comida deliciosa. ¡Volveré!”</blockquote>
+        <cite>- Luis M.</cite>
+      </div>
+      <div class="testimonio">
+        <img src="img/testimonio3.jpg" alt="Foto de Camila">
+        <blockquote>“Un lugar mágico, perfecto para desconectarse y disfrutar de la naturaleza.”</blockquote>
+        <cite>- Camila R.</cite>
+      </div>
+      <div class="testimonio">
+        <img src="img/testimonio4.jpg" alt="Foto de Jorge">
+        <blockquote>“La caminata a La Miel es una experiencia inolvidable. ¡Recomendado!”</blockquote>
+        <cite>- Jorge P.</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN FACEBOOK FEED -->
+  <section class="facebook-feed" aria-labelledby="facebook-titulo">
+    <h2 id="facebook-titulo">Galería de Facebook</h2>
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+    <div class="elfsight-app-75df071e-c56d-4a38-92ee-d26d54e20cc5" data-elfsight-app-lazy></div>
+  </section>
+
+  <!-- Modal de Publicidad -->
+  <div id="modalPublicidad" class="modal-publicidad" role="dialog" aria-modal="true" aria-labelledby="modalPubliTitulo" style="display:none;">
+    <div class="modal-contenido">
+      <span id="cerrarModal" class="modal-cerrar" aria-label="Cerrar">&times;</span>
+      <h2 id="modalPubliTitulo">¡Nueva promoción en Sapzurro!</h2>
+      <p>Reserva tu hospedaje este mes y recibe un tour gratuito por la bahía.<br>
+      <a href="promociones.html" class="boton" style="margin-top:1rem;">Ver promoción</a></p>
+    </div>
+  </div>
+
+  <!-- Notificación tipo toast para promociones -->
+  <div id="toastPromo" class="toast-promo" role="alert" aria-live="polite" style="display:none;">
+    <span class="toast-text">
+      🎉 ¡Nueva promoción! Reserva este mes y recibe un tour gratuito por la bahía.
+      <a href="promociones.html" class="toast-link">Ver promoción</a>
+    </span>
+    <span id="toastClose" class="toast-close" aria-label="Cerrar">&times;</span>
+  </div>
+
+
+
+  <!-- MAPA DE SAPZURRO -->
+  <div id="mapa-sapzurro" style="height: 350px; border-radius: 1.5rem; margin: 2rem 0;"></div>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var map = L.map('mapa-sapzurro').setView([8.6667, -77.3667], 13);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '© OpenStreetMap'
+    }).addTo(map);
+    L.marker([8.6667, -77.3667]).addTo(map)
+      .bindPopup('Sapzurro, Chocó').openPopup();
+  });
+  </script>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <p>&copy; <span id="year"></span> <strong>Sapzurro Paraíso de Todos</strong>. Todos los derechos reservados.</p>
+    <div class="footer-links">
+      <a href="https://www.facebook.com/Sapzurro1" target="_blank" rel="noopener" aria-label="Facebook Sapzurro">
+        <img src="iconos/facebook.png" alt="Facebook" class="footer-icon"> Facebook
+      </a>
+      <span>|</span>
+      <a href="mailto:info@sapzurro.com" aria-label="Correo electrónico">
+        <img src="iconos/email.png" alt="Email" class="footer-icon"> info@sapzurro.com
+      </a>
+    </div>
+  </div>
+</footer>
+<script>
+  // Año dinámico en el footer
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
