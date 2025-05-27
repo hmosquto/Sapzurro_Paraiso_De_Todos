@@ -21,7 +21,6 @@ body {
 header.hero {
   position: relative;
   width: 100vw;
-  min-height: 100vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -33,7 +32,6 @@ header.hero {
   position: absolute;
   top: 0; left: 0;
   width: 100vw;
-  height: 100vh;
   object-fit: cover;
   z-index: 0;
   filter: brightness(0.7) blur(1px);
