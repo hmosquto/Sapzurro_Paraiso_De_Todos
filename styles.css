@@ -88,16 +88,22 @@ header.hero {
   }
 }
 @media (max-width: 600px) {
+  header.hero {
+    min-height: 140px !important;
+    height: 140px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+  .hero-bg {
+    height: 140px !important;
+    min-height: 140px !important;
+    max-height: 140px !important;
+  }
   .hero-content {
     padding: 1.5rem 0.5rem 1rem 0.5rem;
   }
   .hero-content h1 {
     font-size: 1.2rem;
-  }
-  .hero-bg {
-    height: 100%;
-    min-height: 100%;
-    max-height: 100%;
   }
   .hero::before {
     background: transparent !important;
